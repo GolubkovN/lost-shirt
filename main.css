@@ -173,18 +173,17 @@ ul > li {
     background-image: url("./img/hero/slider_pic_1.png");
 }
 .fade-slider__item--style-tshirts .fade-slider__text {
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-150%, -50%);
+    transform: translate(-164%, -52%);
 }
 .fade-slider__item--style-games {
     background-image: url('./img/hero/slider_pic_2.png');
 }
 .fade-slider__item--style-games .fade-slider__text {
-    position: absolute;
-    top: 63%;
-    left: 165px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 .fade-slider__item--style-games .lined-text {
     align-items: center;
@@ -193,13 +192,15 @@ ul > li {
     background-image: url('./img/hero/slider_pic_3.png');
 }
 .fade-slider__item--style-present .fade-slider__text {
-    position: absolute;
-    bottom: 62px;
-    left: 20px;
-    transform: translate(-93px, -30px);
+    left: 0;
+    bottom: 0;
+    transform: translateY(-120%);
 }
 .fade-slider__item--style-present .lined-text{
     align-items: center;
+}
+.fade-slider__text {
+    position: absolute;
 }
 .lined-text {
     font-family: 'Alegreya Sans', Arial,  sans-serif;
