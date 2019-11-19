@@ -4,7 +4,9 @@ body {
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background: #fcf5e6;
+    color: #212121;
+    -webkit-font-moozing: antialiased;
+    -moz-osx-smoozing: grayscale; 
 }
 a {
     text-decoration: none;
