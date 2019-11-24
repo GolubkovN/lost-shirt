@@ -5,6 +5,7 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
+    background: #faf5e6;
     -webkit-font-moozing: antialiased;
     -moz-osx-smoozing: grayscale; 
 }
@@ -466,6 +467,7 @@ ul > li {
     display: block;
     margin-bottom: 5px;
 }
+/********************FOOTER************************/
 .extras {
     display: flex;
     margin-bottom: 95px;
@@ -517,7 +519,9 @@ ul > li {
 .socials__link:hover .socials__icon {
     fill: var(--red)
 }
+/****************************FOTER END*******************************/
 /* product page */
+/*****************************HEADER*****************************/
 .header-inner {
     min-height: 180px;
     background: url("./img/bg/hero.jpg") center center / cover no-repeat;
@@ -529,17 +533,17 @@ ul > li {
     content: "";
     display: block;
     position: absolute;
-    height: 159%;
+    height: 172%;
     width: 65%;
-    top: -16px;
+    top: -18px;
     left: 18%;
-    background: url(./img/decor/header-guys.png)center center / contain no-repeat;
+    background: url('./img/decor/header-guys.png')center center / contain no-repeat;
 }
 .fade-slider__text--header {
-    top: 40px;
-    left: 35%;
+    top: 23%;
+    left: 34%; 
 }
-.lined-text--header-text {
+.lined-text--reduced-text {
     font-family: 'Alegreya Sans', Arial,  sans-serif;
     font-size: 24px;
     text-transform: uppercase;
@@ -550,6 +554,170 @@ ul > li {
     flex-direction: column;
     align-items: flex-start;
 }
-.lined-text__word--header {
+.lined-text__word--reduced {
     padding: 4px 5px 7px 7px;
+}
+/********************************HEADER END************************************/
+/***About Tshirt****/
+.product-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: var(--yellow);
+    width: 1100px;
+    margin-bottom: 90px;
+}
+.product__content {
+    width: 525px;
+    min-height: 665px;
+    position: relative;
+}
+.product__img {
+    position: absolute;
+    width: 472px;
+    height: 413px;
+    padding: 120px 28px 112px;
+   
+}
+.product__details {
+    width: 50%;
+    background: #faf5e6;
+    border: 10px solid var(--yellow);
+}
+.details__list {
+    margin: 22px 0;
+}
+.details__item {
+    padding-bottom: 25px;
+}
+.details__item:last-child {
+    padding-bottom: 0;
+}
+.details__item:last-child {
+    margin-bottom: 0;
+}
+.titles__list {
+    padding-left: 25px;
+}
+.title {
+    margin: 10px 0;
+    line-height: 1;
+}
+.title--brend {
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 17px;
+}
+.title--print {
+    font-family: var(--titlesFont);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 47px;
+    margin: 10px 0;
+}
+.title--price {
+    width: 95px;
+    text-align: center;
+    padding: 5px 10px;
+    font-family: var(--titlesFont);
+    font-size: 38px;
+    font-weight: bold;
+    background: var(--yellow);
+}
+.details__item.details__item--general-text {
+    border-top: 1px solid #ded8c8;
+    border-bottom: 1px solid #ded8c8;
+    padding: 30px 0;
+}
+.general-text__word {
+    display: block;
+    padding: 15px 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--black);
+}
+.general-text__word:first-child{
+    padding-top: 0;
+}
+.general-text__word:last-child {
+    padding-bottom: 0;
+}
+/*****************************sizes block******************************************/
+.size-list {
+    display: flex;
+    padding:  25px 25px;
+}
+.size__item {
+    display: block;
+    min-width: 45px;
+    height: 45px;
+    border: 2px solid #ddd7c7;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.size__item:hover {
+    border-color: var(--yellow);
+}
+.size__item--active {
+    border-color: var(--yellow);
+    background: var(--yellow);
+}
+.size__item.size__item--disabled {
+    color: #ddd7c7;
+    pointer-events: none;
+}
+
+/*******************************************************/
+/**********************buttons block***************/
+.buttons__list {
+    display: flex;
+    padding-left: 25px;
+}
+.buttons__item {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons__item:last-child {
+    margin-right: 0;
+} 
+.buttons__item.button__item--active {
+    border: 2px solid var(--yellow);
+}
+.button {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #32302a;
+    border-radius: 100%;
+    border: 2px solid #ddd7c7 ;
+}
+.button--white {
+    background: #faf5e6;
+}
+.button--green {
+    background: #688f36;
+}
+.button--blue {
+    background: #404a8a;
+}
+.button--red {
+    background: #ba2b2b;
+}
+/**********************************************/
+.btn.btn--size-doble {
+    margin-left: 25px;
+    padding: 13px 68px;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 3px;
 }
