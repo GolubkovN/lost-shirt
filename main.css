@@ -559,12 +559,15 @@ ul > li {
 }
 /********************************HEADER END************************************/
 /***About Tshirt****/
-.product-container {
+.container2 {
+    width: 1100px;
     margin: 0 auto;
+}
+.product-block {
     display: flex;
     justify-content: space-between;
     background: var(--yellow);
-    width: 1100px;
+    width: 100%;
     margin-bottom: 90px;
 }
 .product__content {
@@ -574,9 +577,9 @@ ul > li {
 }
 .product__img {
     position: absolute;
-    width: 472px;
-    height: 413px;
-    padding: 120px 28px 112px;
+    width: 506px;
+    height: 450px;
+    padding: 156px 18px 112px;
    
 }
 .product__details {
@@ -645,7 +648,7 @@ ul > li {
 /*****************************sizes block******************************************/
 .size-list {
     display: flex;
-    padding:  25px 25px;
+    padding: 22px 0 0 25px;
 }
 .size__item {
     display: block;
@@ -720,4 +723,35 @@ ul > li {
     font-size: 28px;
     line-height: 1;
     letter-spacing: 3px;
+}
+/*******************************description************************/
+.descr__recommendations {
+    margin: 0 auto;
+    min-height: 270px;
+    display: flex;
+    border: 10px solid var(--yellow);
+}
+.rec__list {
+    width: 51%;
+    padding: 46px 35px 40px 40px;
+    border-right: 1px solid #ddd7c7;
+}
+
+.rec__item {
+    display: flex;
+    align-items: center;
+}
+.rec__icon {
+    width: 25px;
+    height: 18px;
+    padding-right: 25px;
+}
+.rec__text {
+    font-size: 13px;
+    display: block;
+}
+.descr__text {
+    font-size: 13px;
+    padding: 45px 90px 0 45px;
+    line-height: 1.42;
 }
