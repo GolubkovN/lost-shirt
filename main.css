@@ -779,8 +779,8 @@ ul > li {
     border-collapse: collapse;
 }
 .table-sizes td {
-    width: 34px;
-    height: 50px;
+    width: 30px;
+    height: 51px;
     border: 1px solid #ddd7c7;
     text-align: center;
     font-size: 14px;
