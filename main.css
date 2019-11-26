@@ -509,8 +509,8 @@ ul > li {
 }
 .socials__link {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
 }
 .socials__icon {
     height: 100%;
@@ -727,11 +727,12 @@ ul > li {
     letter-spacing: 3px;
 }
 /*******************************description************************/
-.tab__recommendations {
+.tab__item {
+    width: 100%;
     margin: 0 auto;
-    min-height: 270px;
     display: flex;
     border: 10px solid var(--yellow);
+    min-height: 256px;
 }
 .rec__list {
     width: 51%;
@@ -759,25 +760,21 @@ ul > li {
 }
 /*****************************************************************/
 /*****************size Table***********************/
-.tab-sizes {
-    margin: 0 auto;
-    min-height: 430px;
-    border: 10px solid var(--yellow);
-    display: flex;
-}
-.tab__instruction {
-    width: 22%;
-    padding: 40px 48px;
+.tab__item__instruction {
+    padding: 40px 44px;
 }
 .instruction__list {
-    padding: 0;
+    padding: 0 auto;
+    margin-top: 25px;
+    list-style-position: outside;
 }
 .instruction__item {
     line-height: 2;
-    font-size: 12px;
+    font-size: 15px;
 }
 /*************table***********/
 .table-sizes {
+    height: 100%;
     width: 100%;
     border-collapse: collapse;
 }
@@ -789,10 +786,12 @@ ul > li {
     font-size: 14px;
 }
 .table-sizes th {
+    text-align: center;
     border: 1px solid #ddd7c7;
     height: 50px;
     background: #f4eee0;
 }
+
 .table-sizes td:first-child,
 .table-sizes th:first-child {
     text-align: left;
@@ -800,10 +799,7 @@ ul > li {
 }
 /******************************************/
 /**************************DELIVERY TERMS**********************************/
-.tab__delivery {
-    display: flex;
-    border: 10px solid var(--yellow);
-}
+
 .delivery__content {
     width: 53%;
     min-height: 240px;
@@ -820,13 +816,7 @@ ul > li {
 }
 /*******************************************************************************/
 /***************************ABOUT BREND**********************************************/
-.tab__about {
-    display: flex;
-    border: 10px solid var(--yellow);
-    min-height: 244px;
-}
 .about__content {
-    width: 53%;
     padding: 88px 55px 0;
     border-right: 1px solid #ddd7c7;
 }
@@ -834,3 +824,4 @@ ul > li {
     width: 225px;
     height: 55px;
 }
+
