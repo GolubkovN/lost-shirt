@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="1100">
+    <meta name="viewport" content="1440">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -35,13 +35,23 @@
         <section class="product">
             <div class="container2">
                 <div class="product-block">
-                    <div class="product__content">
+                    <ul class="product__list">
+                       <li class="product__item black">
                         <img src="./img/tshirt/tshirt_07.png" alt="" class="product__img">
+                       </li>
+                       <li class="product__item white">
                         <img src="./img/tshirt/tshirt_08.png" alt="" class="product__img">
+                       </li>
+                       <li class="product__item green">
                         <img src="./img/tshirt/tshirt_09.png" alt="" class="product__img">
+                       </li>
+                       <li class="product__item blue">
                         <img src="./img/tshirt/tshirt_10.png" alt="" class="product__img">
+                       </li>
+                       <li class="product__item red">
                         <img src="./img/tshirt/tshirt_11.png" alt="" class="product__img">
-                    </div>
+                       </li>
+                    </ul>
                     <div class="product__details">
                         <ul class="details__list">
                             <li class="details__item">
@@ -90,19 +100,19 @@
                             <li class="details__item">
                                 <ul class="buttons__list">
                                     <li class="buttons__item">
-                                        <a href="#" class="button button--black"></a>
+                                        <a href="#" data-button="black" class="button button--black"></a>
                                     </li>
                                     <li class="buttons__item">
-                                        <a href="#" class="button button--white"></a>
+                                        <a href="#" data-button="white" class="button button--white"></a>
                                     </li>
                                     <li class="buttons__item">
-                                        <a href="#" class="button button--green"></a>
+                                        <a href="#" data-button="green" class="button button--green"></a>
                                     </li>
                                     <li class="buttons__item">
-                                        <a href="#" class="button button--blue"></a>
+                                        <a href="#" data-button="blue" class="button button--blue"></a>
                                     </li>
-                                    <li class="buttons__item button__item--active">
-                                        <a href="#" class="button button--red"></a>
+                                    <li class="buttons__item buttons__item--active">
+                                        <a href="#" data-button="red" class="button button--red"></a>
                                     </li>
                                 </ul>
                             </li>
@@ -440,6 +450,8 @@
         </footer>
     </div>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="./scripts/size-selection.js"></script>
+    <script src="./scripts/color-change.js"></script>
     <script src="./scripts/info-filter.js"></script>
 </body>
 </html>

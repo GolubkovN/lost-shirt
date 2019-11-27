@@ -572,13 +572,15 @@ ul > li {
     width: 100%;
     margin-bottom: 90px;
 }
-.product__content {
+.product__list {
     width: 525px;
     min-height: 665px;
     position: relative;
 }
+.product__item {
+   
+}
 .product__img {
-    position: absolute;
     width: 506px;
     height: 450px;
     padding: 156px 18px 112px;
@@ -684,10 +686,10 @@ ul > li {
     padding-left: 25px;
 }
 .buttons__item {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
     border-radius: 100%;
-    margin-right: 10px;
+    margin-right: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -695,7 +697,7 @@ ul > li {
 .buttons__item:last-child {
     margin-right: 0;
 } 
-.buttons__item.button__item--active {
+.buttons__item.buttons__item--active {
     border: 2px solid var(--yellow);
 }
 .button {
