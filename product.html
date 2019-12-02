@@ -35,23 +35,9 @@
         <section class="product">
             <div class="container2">
                 <div class="product-block">
-                    <ul class="product__list">
-                       <li class="product__item black">
+                    <div class="product__list">
                         <img src="./img/tshirt/tshirt_07.png" alt="" class="product__img">
-                       </li>
-                       <li class="product__item white">
-                        <img src="./img/tshirt/tshirt_08.png" alt="" class="product__img">
-                       </li>
-                       <li class="product__item green">
-                        <img src="./img/tshirt/tshirt_09.png" alt="" class="product__img">
-                       </li>
-                       <li class="product__item blue">
-                        <img src="./img/tshirt/tshirt_10.png" alt="" class="product__img">
-                       </li>
-                       <li class="product__item red">
-                        <img src="./img/tshirt/tshirt_11.png" alt="" class="product__img">
-                       </li>
-                    </ul>
+                    </div>
                     <div class="product__details">
                         <ul class="details__list">
                             <li class="details__item">
@@ -60,7 +46,7 @@
                                     <li class="title title--print">Rick and Morty</li>
                                     <li class="title title--price">2 800</li>
                                 </ul>
-                            </li>
+                            </li>.
                             <li class="details__item details__item--general-text">
                                 <span class="general-text__word">Состав: Хлопок 100%</span>
                                 <span class="general-text__word">Сузон: Мульти</span>
@@ -98,23 +84,28 @@
                                 </ul>
                             </li>
                             <li class="details__item">
-                                <ul class="buttons__list">
-                                    <li class="buttons__item buttons__item--active">
-                                        <a href="#" data-button="black" class="button button--black"></a>
-                                    </li>
-                                    <li class="buttons__item">
-                                        <a href="#" data-button="white" class="button button--white"></a>
-                                    </li>
-                                    <li class="buttons__item">
-                                        <a href="#" data-button="green" class="button button--green"></a>
-                                    </li>
-                                    <li class="buttons__item">
-                                        <a href="#" data-button="blue" class="button button--blue"></a>
-                                    </li>
-                                    <li class="buttons__item">
-                                        <a href="#" data-button="red" class="button button--red"></a>
-                                    </li>
-                                </ul>
+                                <div class="colors">
+                                    <label class="color__label">
+                                        <input class="color__radio color__radio--black" type="radio" name="color" id="7">
+                                        <div class="color color--black"></div>
+                                    </label>
+                                    <label class="color__label">
+                                        <input class="color__radio color__radio--white" type="radio" name="color" id="8">
+                                        <div class="color color--white"></div>
+                                    </label>
+                                    <label class="color__label">
+                                        <input class="color__radio color__radio--green" type="radio" name="color" id="9">
+                                        <div class="color color--green"></div>
+                                    </label>
+                                    <label class="color__label">
+                                        <input type="radio" class="color__radio color__radio--blue" name="color" id="10">
+                                        <div class="color color--blue"></div>
+                                    </label>
+                                    <label class="color__label">
+                                        <input type="radio" class="color__radio color__radio--red" name="color" id="11">
+                                        <div class="color color--red"></div>
+                                    </label>
+                                </div>
                             </li>
                             <li class="details__item">
                                 <a href="#" class="btn btn--size-doble">Купить</a>
@@ -450,8 +441,8 @@
         </footer>
     </div>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="./scripts/size-selection.js"></script>
-    <script src="./scripts/color-change.js"></script>
-    <script src="./scripts/info-filter.js"></script>
+    <script src="scripts/size-selection.js"></script>
+    <script src="scripts/color-change.js"></script>
+    <script src="scripts/info-filter.js"></script>
 </body>
 </html>

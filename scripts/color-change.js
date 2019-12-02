@@ -1,32 +1,11 @@
 (function() {
+    let activeImg = document.querySelector(".product__img").src;
 
-   const elem = document.querySelector('.product__list');
-    const iso = new Isotope( elem, {
-  
-  itemSelector: '.product__item',
-  filter: '.black'
-  });
-
-
-    const controlls = document.querySelectorAll(".button");
-    const activeClass = "buttons__item--active";
-
-    controlls.forEach(function(control) {
-      
-      control.addEventListener("click", function(e) {
-          e.preventDefault();
-
-          const filterName = control.getAttribute("data-button");
-
-          controlls.forEach(function(link){
-              link.closest(".buttons__item").classList.remove(activeClass);
-          })
-         control.closest(".buttons__item").classList.add(activeClass);
-
-        iso.arrange({
-            filter: `.${filterName}`
-        })
-      })
-    })
-
-  })();
+    document.querySelector(".colors").querySelectorAll('input').forEach( e => {
+        e.onclick = (event) => {
+            const arr = activeImg.split('');
+            event.target.id >= 10 ? arr.splice(activeImg.length - 6, 2, event.target.id) : arr.splice(activeImg.length - 5, 1, event.target.id);
+            document.querySelector(".product__img").src = arr.join('');
+        };
+    });
+})();

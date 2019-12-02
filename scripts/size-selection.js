@@ -4,8 +4,8 @@
   const activeClass = "size__item--active";
    controlls.forEach(function(control) {
 
-    control.addEventListener("click", function(e) {
-      e.preventDefault();
+    control.addEventListener("click", function() {
+      
      
       controlls.forEach(function(link) {
         link.closest(".size__item").classList.remove(activeClass);
@@ -14,4 +14,4 @@
        })
     })
  
-})();
+})();   
