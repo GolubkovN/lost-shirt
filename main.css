@@ -3,7 +3,7 @@ body {
     height: 100%;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     color: #212121;
     background: #faf5e6;
     -webkit-font-moozing: antialiased;
@@ -56,12 +56,12 @@ ul > li {
     font-size: 16px;
 }
 .mail-title {
-    margin-bottom: 3px;;
+    margin-bottom: 3px;
 }
 .mail-content {
     background: #212121;
     color: #ffbc2f;
-    padding: 5px 10px;
+    padding: 5px 42px;
     font-size: 16px;
 }
 
@@ -539,11 +539,12 @@ ul > li {
     left: 18%;
     background: url('./img/decor/header-guys.png')center center / contain no-repeat;
 }
-.fade-slider__text--header {
+.header__text{
+    position: absolute;
     top: 23%;
     left: 34%; 
 }
-.lined-text--reduced-text {
+.lined-text--reduced {
     font-family: 'Alegreya Sans', Arial,  sans-serif;
     font-size: 24px;
     text-transform: uppercase;
@@ -560,7 +561,7 @@ ul > li {
 /********************************HEADER END************************************/
 /***About Tshirt****/
 
-.container2 {
+.container--width-medium {
     width: 1100px;
     margin: 0 auto;
     margin-bottom: 80px;
@@ -579,56 +580,51 @@ ul > li {
 }
 .product__img {
     position: absolute;
-    width: 506px;
+    width: 510px;
     height: 450px;
     padding: 156px 18px 112px;
 }
 .product__details {
     width: 50%;
+}
+.details {
     background: #faf5e6;
     border: 10px solid var(--yellow);
 }
 .details__list {
     margin: 22px 0;
 }
-.details__item:last-child {
-    padding-bottom: 0;
-}
-.details__item:last-child {
-    margin-bottom: 0;
-}
-.titles__list {
-    padding-left: 25px;
-}
-.title {
-    margin: 10px 0;
-    line-height: 1;
-}
-.title--brend {
+
+.details__item--brend {
     color: var(--yellow);
     font-weight: bold;
     font-size: 17px;
+    padding-left: 20px;
 }
-.title--print {
+.details__item--name {
     font-family: var(--titlesFont);
     text-transform: uppercase;
     font-weight: bold;
     font-size: 47px;
     margin: 10px 0;
+    padding-left: 20px;
 }
-.title--price {
+.details__item--price {
     width: 95px;
     text-align: center;
     padding: 5px 10px;
     font-family: var(--titlesFont);
     font-size: 38px;
+    padding-left: 25px;
     font-weight: bold;
     background: var(--yellow);
+    margin-left: 20px;
 }
-.details__item.details__item--general-text {
+.general-text {
     border-top: 1px solid #ded8c8;
     border-bottom: 1px solid #ded8c8;
     padding: 30px 0;
+    margin-top: 30px;
 }
 .general-text__word {
     display: block;
@@ -644,42 +640,46 @@ ul > li {
     padding-bottom: 0;
 }
 /*****************************sizes block******************************************/
-.size-list {
-    display: flex;
-    padding: 22px 0 0 25px;
+.visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-.size__item {
-    display: block;
-    min-width: 45px;
-    height: 45px;
-    border: 2px solid #ddd7c7;
-    margin-right: 10px;
-    display: flex;
+.details__sizes {
+    margin: 25px 20px;
+}
+.size {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ddd7c7;
+    cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    cursor: pointer;
 }
-.size__item:hover {
+.size:hover {
     border-color: var(--yellow);
 }
-.size__item--active {
-    border-color: var(--yellow);
+.size__radio:checked ~ .size {
     background: var(--yellow);
+    border-color: var(--yellow);
 }
-.size__item.size__item--disabled {
+.size__radio:disabled ~ .size {
     color: #ddd7c7;
     pointer-events: none;
 }
 
 /*******************************************************/
 /**********************buttons block***************/
-.color__radio {
-    display: none;
-}
-.colors {
-    margin: 20px;
+.colors__buttons {
+    margin: 25px 20px;
 }
 .color {
     position: relative;
@@ -731,29 +731,32 @@ ul > li {
     letter-spacing: 3px;
 }
 /*******************************description************************/
-.tab__list {
+.tabs {
     border: 10px solid var(--yellow);
 }
 .tab__item {
     width: 100%;
     margin: 0 auto;
+}
+/******************************/
+.description {
     display: flex;
 }
-.rec__list {
+.description__list {
     width: 51%;
     padding: 46px 35px 40px 40px;
     border-right: 1px solid #ddd7c7;
 }
-.rec__item {
+.description__item {
     display: flex;
     align-items: center;
 }
-.rec__icon {
+.description__icon {
     width: 25px;
     height: 18px;
     padding-right: 25px;
 }
-.rec__text {
+.description__text {
     font-size: 13px;
     display: block;
 }
@@ -764,6 +767,10 @@ ul > li {
 }
 /*****************************************************************/
 /*****************size Table***********************/
+.tab__item__sizes {
+    display: flex;
+    width: 100%;
+}
 .tab__item__instruction {
     padding: 40px 44px;
 }
@@ -802,7 +809,9 @@ ul > li {
 }
 /******************************************/
 /**************************DELIVERY TERMS**********************************/
-
+.delivery {
+    display: flex;
+}
 .delivery__content {
     width: 53%;
     min-height: 240px;
@@ -819,6 +828,9 @@ ul > li {
 }
 /*******************************************************************************/
 /***************************ABOUT BREND**********************************************/
+.about {
+    display: flex;
+}
 .about__content {
     padding: 88px 55px 0;
     border-right: 1px solid #ddd7c7;
