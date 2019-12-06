@@ -839,4 +839,21 @@ ul > li {
     max-width: 100%;
     max-width: 100%;
 }
-
+/**********************************************************************************************************************************/
+/****                    MEdia queries *****************/
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 1100px;
+    }
+}
+@media (max-width:991px) {
+    .tab__item__sizes {
+        flex-direction: column;
+    }
+    .tab__item__instruction {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+}
